@@ -76,7 +76,9 @@ public class RestaurantsActivity extends AppCompatActivity {
                             Log.d(TAG, "Rating: " + Double.toString(restaurant.getRating()));
                             Log.d(TAG, "Address: " + android.text.TextUtils.join(", ", restaurant.getAddress()));
                             Log.d(TAG, "Categories: " + restaurant.getCategories().toString());
-                        }
+                            Log.d(TAG, "Latitude: " + Double.toString(restaurant.getLatitude()));
+                            Log.d(TAG, "Longitude: " + Double.toString(restaurant.getLongitude()));
+                          }
                     }
                 });
             }

@@ -18,7 +18,7 @@ public class Restaurant {
     private ArrayList<String> mCategories = new ArrayList<>();
 
     public Restaurant(String name, String phone, String website,
-                      double rating, String imageUrl, ArrayList<String> address,
+                      double rating, String imageUrl, double latitude, double longitude, ArrayList<String> address,
                       ArrayList<String> categories) {
         this.mName = name;
         this.mPhone = phone;
@@ -26,8 +26,8 @@ public class Restaurant {
         this.mRating = rating;
         this.mImageUrl = imageUrl;
         this.mAddress = address;
-        //this.mLatitude = latitude;
-        //this.mLongitude = longitude;
+        this.mLatitude = latitude;
+        this.mLongitude = longitude;
         this.mCategories = categories;
     }
 
@@ -55,13 +55,13 @@ public class Restaurant {
         return mAddress;
     }
 
-    //public double getLatitude() {
-      //  return mLatitude;
-    //}
+    public double getLatitude() {
+      return mLatitude;
+    }
 
-   // public double getLongitude() {
-       // return mLongitude;
-   // }
+    public double getLongitude() {
+       return mLongitude;
+    }
 
     public ArrayList<String> getCategories() {
         return mCategories;
